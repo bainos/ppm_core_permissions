@@ -14,6 +14,10 @@
 class core_permissions {
   if $::osfamily != 'windows' {
 
+    notify {'test':
+      message => "OS_FAMILY: ${::osfamily}",
+    }
+
     $rootgroup = $::operatingsystem ? {
       'Solaris' => 'wheel',
       default   => 'root',
