@@ -11,7 +11,7 @@
 #
 # Jacopo Binosi <b4inoz@gmail.com>
 #
-class core_permissions {
+class ppm_core_permissions {
   if $::osfamily != 'windows' {
 
     notify {'test':
