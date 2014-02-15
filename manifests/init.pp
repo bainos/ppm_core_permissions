@@ -1,4 +1,4 @@
-# == Class: core_permission
+# == Class: ppm_core_permissions
 #
 # This class menages permissions for critical system files.
 #
