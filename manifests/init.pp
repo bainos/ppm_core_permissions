@@ -28,6 +28,13 @@ class ppm_core_permissions {
       default   => '/etc/fstab',
     }
 
+    file {'/tmp/ppm_core_permissions':
+      ensure => present,
+      mode   => '0770',
+      owner  => 'bainos',
+      group  => $rootgroup,
+    }
+
     file {'fstab':
       ensure => present,
       path   => $fstab,
